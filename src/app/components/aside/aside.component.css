@@ -1,3 +1,9 @@
-.btn-family-aside{
+.btn-family-aside
+{
     background-color: #FFAB33;
+}
+
+.left
+{
+    float: left;
 }
