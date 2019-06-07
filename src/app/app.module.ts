@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MapComponent } from './components/map/map.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MenuComponent } from './components/menu/menu.component';
     HeaderComponent,
     MapComponent,
     AsideComponent,
-    MenuComponent
+    MenuComponent,
+    LoginComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
