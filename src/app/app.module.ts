@@ -11,6 +11,7 @@ import { AsideComponent } from './components/aside/aside.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { ReportComponent } from './components/report/report.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     AsideComponent,
     MenuComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    ReportComponent
     
   ],
   imports: [
@@ -31,6 +33,6 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [LoginComponent, SignUpComponent]
+  entryComponents: [LoginComponent, SignUpComponent, ReportComponent]
 })
 export class AppModule { }

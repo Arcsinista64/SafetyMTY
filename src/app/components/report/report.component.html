@@ -1,0 +1,100 @@
+<div class="modal-header">
+    <h4 class="modal-title">Reportaje de {{incidente}}</h4>
+    <!-- <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+  </div>
+  <div class="modal-body">
+
+          
+          <form class="form-horizontal">
+              
+              <!-- Form Name -->
+              <legend></legend>
+              
+              <!-- Appended checkbox -->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="incident-address">Direccion de incidente:</label>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <input id="incident-address" name="incident-address" class="form-control" type="text" placeholder="Calle # ext, Colonia, Municipio." required="">
+                        <span class="input-group-addon">     
+                        <input type="checkbox" checked="checked">     
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <!-- Appended checkbox -->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="appendedcheckbox">Horario de incidente:</label>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder="HH:MM:SS hrs" required="">
+                        <span class="input-group-addon">     
+                        <input type="checkbox" checked="checked">     
+                    </span>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <!-- Button Drop Down -->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="incident-level">Nivel de incidente:</label>
+                <div class="col-md-12">
+                  <div class="input-group">
+                    <input id="incident-level" name="incident-level" class="form-control" placeholder="Peligro: Bajo, medio, alto! ... " type="text" required="">
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Nivel
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu pull-right">
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- File Button --> 
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="photo-add">Fotografia:</label>
+                <div class="col-md-12">
+                  <input id="photo-add" name="photo-add" class="input-file" type="file">
+                </div>
+              </div>
+              
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class="col-md-12 control-label" for="incident-details">Detalles de incidente</label>
+                <div class="col-md-12">                     
+                  <textarea class="form-control" id="incident-details" name="incident-details"></textarea>
+                </div>
+              </div>
+              
+              <div class="form-group right">
+                  <div class="col-md-12">
+                    <button id="signup-button" name="signup-button" class="btn btn-outline-primary">Enviar</button>
+                    <span> </span>
+                    <button type="button" class="btn btn-outline-dark" >Cancelar</button>
+      
+                  </div>
+                </div>
+
+              </form>
+          
+              
+
+
+
+  </div>
+
+  <div class="modal-footer">
+    <!-- <button type="button" class="btn btn-outline-primary" >Acceder</button> -->
+
+  </div>

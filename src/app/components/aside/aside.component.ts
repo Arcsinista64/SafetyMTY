@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ReportComponent } from '../report/report.component';
+
+
 
 @Component({
   selector: 'app-aside',
@@ -7,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AsideComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService : NgbModal) { }
 
   ngOnInit() {
+  }
+
+  report()
+  {
+    const modal = this.modalService.open(ReportComponent);
   }
 
 }

@@ -3,13 +3,13 @@
   <h2 class="card-header"> Tipo de incidente:</h2>
     
     <div class="form-check">
-        <input type="radio" class="form-check-input" id="materialGroupExample1" name="groupOfMaterialRadios">
+        <input type="radio" class="form-check-input" id="materialGroupExample1" name="groupOfMaterialRadios" checked>
         <label class="form-check-label" for="materialGroupExample1">Incendio</label>
       </div>
       
       <!-- Group of material radios - option 2 -->
       <div class="form-check">
-        <input type="radio" class="form-check-input" id="materialGroupExample2" name="groupOfMaterialRadios" checked>
+        <input type="radio" class="form-check-input" id="materialGroupExample2" name="groupOfMaterialRadios" >
         <label class="form-check-label" for="materialGroupExample2">Robo</label>
       </div>
       
@@ -26,28 +26,26 @@
         </div>
 
     <div class="navbar">
-      <div>
-        <button type="button" class="btn btn-danger">
-          ICONO
-            <i>911</i>
-        </button>
-
-      </div>
-
+      
+        <div>
+            <button type="button" class="btn btn-warning" (click)="report()">
+                <i>Reporte</i>
+            </button>
+          </div>
       
       <div>
-        <button type="button" class="btn btn-family-aside">
-          ICONO
+        <button type="button" class="btn btn-family-aside" disabled>
           <i>Familia</i>
         </button>
       </div>
 
       <div>
-          <button type="button" class="btn btn-warning">
-            ICONO
-              <i>Reporte</i>
+          <button type="button" class="btn btn-danger" disabled>
+              <i>911</i>
           </button>
+  
         </div>
+     
     </div>
 
     
