@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from '../login/login.component';
+import { SignUpComponent } from '../sign-up/sign-up.component';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService : NgbModal) { }
 
   ngOnInit() {
     
   }
-
   title = 'SafetyMTY';
+
+  login()
+  {
+    const modal = this.modalService.open(LoginComponent);
+  }
+  
+  signup()
+  {
+    const modal = this.modalService.open(SignUpComponent);
+  }
 
 }
