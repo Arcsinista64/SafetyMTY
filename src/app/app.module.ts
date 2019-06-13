@@ -13,6 +13,9 @@ import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ReportComponent } from './components/report/report.component';
 
+import { AgmCoreModule } from '@agm/core';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,10 @@ import { ReportComponent } from './components/report/report.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule  
+    NgbModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDY7CPzQS0Fhcwr60fqAhiq4NAl8jxUhog'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],

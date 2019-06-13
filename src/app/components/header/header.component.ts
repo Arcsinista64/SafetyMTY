@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     
   }
-  title = 'SafetyMTY';
+  title = 'GoSafe';
 
   login()
   {
